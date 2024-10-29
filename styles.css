@@ -1,0 +1,157 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("Free-blue-gradient-pattern-background-from-Fotor.jpg")
+}
+
+header {
+    color:chocolate;
+    text-align: center;
+    padding: 1em;
+}
+
+      
+h1, h2 {
+    margin: 0;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: url(img/bg.png);
+  background-size: cover;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 100px;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+nav ul li a {
+  color: #1d1d24;
+  position: relative;
+  padding: 5px 0;
+}
+nav ul li a:hover {
+  color: #fd4766;
+}
+nav ul li a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #fd4766;
+  transition: 0.3s;
+  bottom: 0;
+}
+nav ul li a:hover:after {
+  width: 100%;
+}
+.btn {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 16px 40px;
+  border-radius: 500px;
+  display: inline-block;
+  font-weight: 500;
+  transition: all 0.4s ease-in-out;
+  background-size: 152% 100%;
+  background: #fd4766;
+  border: 2px solid #fd4766;
+}
+.btn:hover {
+  background: transparent;
+  border-color: #fd4766;
+  color: #fd4766;
+}
+.animated-container {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+}
+
+.animated-container:nth-child(odd) {
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  align-items:flex-start;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.personal-details,
+.about-me,
+.profile-section
+.tech-skill {
+    max-width: 850px;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.profile-section {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.tech-skill {
+  width:auto;
+  border-radius: 8px;
+  margin-top: 20px;
+  align-self: center;
+  clear: both;
+}
+
+.social-links img {
+    width: 50px;
+    border-radius: 8px;
+    height: 50px;
+    margin: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-section img:hover,
+.social-links img:hover {
+    transform: scale(1.1);
+}
+
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
